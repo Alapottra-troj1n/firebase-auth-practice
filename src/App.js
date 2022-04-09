@@ -4,6 +4,7 @@ import './App.css';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import Login from './components/Login/Login';
+import Orders from './components/Orders/Orders';
 import Register from './components/Register/Register';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
      <Header/>
       <Routes>
         <Route path='/' element={<Home/>}></Route>
+        <Route path='/orders' element={<Orders/>}></Route>
         <Route path='/login' element={<Login/>}></Route>
         <Route path='/register' element={<Register/>}></Route>
       </Routes>
